@@ -8,13 +8,7 @@ module.exports = {
     jasmine: true,
   },
   rules: {
-    'comma-dangle': ['error', {
-      imports: 'never',
-      exports: 'never',
-      functions: 'never',
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-    }],
+    'comma-dangle': ['error', 'only-multiline'],
     eqeqeq: ['error', 'smart'],
     curly: 'error',
     indent: ['error', 2],
