@@ -8,7 +8,7 @@ module.exports = (options = {}) => {
       segmentUrl: 'segment-url',
       segmentHtml: 'segment-html',
       separatorSign: 'separator-sign',
-    }
+    },
   }, options);
 
   const htmlentities = (str) => {

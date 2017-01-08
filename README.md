@@ -12,6 +12,24 @@ The code is tested and actually used in production ;)
 npm install --save mark-todo-item
 ```
 
+```javascript
+const MarkTodoItem = require('mark-todo-item');
+const markTodoItem = MarkTodoItem(options);
+const input = `/projects/:id – Add filter with search`;
+const output = markTodoItem(input);
+```
+
+```javascript
+import 'todo' from 'mark-todo-item';
+```
+
+### Lint
+
+```
+eslint ./**/*.js
+```
+_Note to self: eslint returns nothing in case of no error or warnings!_
+
 ### Test
 
 All dependencies can be installed/run globally
