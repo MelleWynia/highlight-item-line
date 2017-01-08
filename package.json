@@ -1,0 +1,24 @@
+{
+  "name": "mark-todo-item",
+  "description": "[Experiment] NPM script for marking todo items (outputs html)",
+  "version": "0.0.0",
+  "url": "https://github.com/MelleWynia/mark-todo-item",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MelleWynia/mark-todo-item"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "mark",
+    "item",
+    "html"
+  ],
+  "author": "Melle Wynia",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
