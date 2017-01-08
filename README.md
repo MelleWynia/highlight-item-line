@@ -1,3 +1,5 @@
+[![Travis CI](https://api.travis-ci.org/MelleWynia/mark-todo-item.svg?branch=master)](https://travis-ci.org/MelleWynia/mark-todo-item)
+
 # Mark todo item
 
 Experimental repository to test how it works with NPM.
