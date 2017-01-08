@@ -26,7 +26,7 @@ import 'todo' from 'mark-todo-item';
 ### Lint
 
 ```
-eslint ./**/*.js
+eslint ./
 ```
 _Note to self: eslint returns nothing in case of no error or warnings!_
 

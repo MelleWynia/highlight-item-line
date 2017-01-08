@@ -19,6 +19,7 @@
   "author": "Melle Wynia",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^3.13.0",
     "jasmine": "^2.5.2"
   }
 }
