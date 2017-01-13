@@ -1,7 +1,7 @@
 {
   "name": "mark-todo-item",
   "description": "[Experiment] NPM script for marking todo items (outputs html)",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "url": "https://github.com/MelleWynia/mark-todo-item",
   "repository": {
     "type": "git",
