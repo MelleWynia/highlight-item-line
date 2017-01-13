@@ -14,5 +14,6 @@ module.exports = {
     indent: ['error', 2],
     'no-multi-spaces': 'warn',
     'no-bitwise': 'warn',
+    semi: ['error', 'always'],
   },
 };

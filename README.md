@@ -28,7 +28,7 @@ import 'todo' from 'mark-todo-item';
 ```
 eslint ./
 ```
-_Note to self: eslint returns nothing in case of no error or warnings!_
+_Note to self: eslint returns nothing in case of no errors nor warnings!_
 
 ### Test
 

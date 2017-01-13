@@ -19,6 +19,12 @@ module.exports = (options = {}) => {
       .replace(/"/g, '&quot;');
   };
 
+  const escapechars = (str) => {
+    return String(str)
+      .replace(/\\`/g, '&#96;')
+      .replace(/\\=/g, '&#61;');
+  };
+
   return (input) => {
 
     if (! input) {
@@ -51,16 +57,21 @@ module.exports = (options = {}) => {
     */
 
     secondSegment = htmlentities(secondSegment);
+    secondSegment = escapechars(secondSegment);
 
     /* Highlight with <code> */
 
-    secondSegment = secondSegment.replace(/-`([^``]+?)`-/gi, (input, contents) => {
+    secondSegment = secondSegment.replace(/`([^`]+?)`/gi, (input, contents) => {
+      return `<code>${contents}</code>`;
+    });
+
+    secondSegment = secondSegment.replace(/(&lt;[a-z-_]+? ?\/?&gt;)/gi, (input, contents) => {
       return `<code>${contents}</code>`;
     });
 
     /* Highlight with <mark> */
 
-    secondSegment = secondSegment.replace(/-=(.+?)=-/gi, (input, contents) => {
+    secondSegment = secondSegment.replace(/=(.+?)=/gi, (input, contents) => {
       return `<mark>${contents}</mark>`;
     });
 
