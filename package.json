@@ -9,7 +9,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "build": "babel --presets=es2015 src/index.js -o index.js && uglifyjs index.js --compress --mangle --screw-ie8 -o index.js"
   },
   "keywords": [
     "mark",
@@ -19,7 +20,10 @@
   "author": "Melle Wynia",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
     "eslint": "^3.13.0",
-    "jasmine": "^2.5.2"
+    "jasmine": "^2.5.2",
+    "uglify-js": "^2.7.5"
   }
 }

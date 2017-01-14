@@ -45,3 +45,7 @@ npm run test // runs jasmine
 ```
 jasmine-node --color --autotest ./ --watch ../**
 ```
+
+# License
+
+MIT

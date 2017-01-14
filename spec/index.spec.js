@@ -3,12 +3,12 @@
 'use strict';
 
 // eslint-disable-next-line no-console
-console.log(`———————————————————————————————— ${(new Date())} \n\n`);
+console.log(`\n———————————————————————————————— ${(new Date())}\n\n`);
 
 describe('MarkTodoItem', () => {
   const test_case_mocks = require('./test-case.mocks');
 
-  const MarkTodoItem = require('../');
+  const MarkTodoItem = require('../src');
   const markTodoItem = MarkTodoItem();
 
   test_case_mocks.forEach( (test_case_mock) => {
